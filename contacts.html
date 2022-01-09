@@ -1,0 +1,86 @@
+<!doctype html>
+<html>
+    <head>
+    <title>Emily's Bakery|Contacts</title>
+    <link rel="stylesheet" type="text/css" href="./css/style-main.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"/>
+    <link rel="icon" href="./images/favicon.ico"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
+    </head>
+    <body>
+    <a name="top"></a>
+    <div name="top">
+        <!--
+
+        NAVBAR
+
+        -->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+            <a class="navbar-brand" href="./index.html">Emily's Bakery</a>
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+                
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <!--<a class="nav-link" href="#specials">Home <span class="sr-only">(current)</span></a>-->
+                        <a class="nav-link" href="./products.html">Products</a>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">History</a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                              <a class="dropdown-item" href="https://www.chinahighlights.com/festivals/mid-autumn-festival-history-origin.htm#:~:text=The%20early%20form%20of%20the,and%20more%20popular%20over%20time." target="_blank" onclick="$('#collapseOne').collapse('show');">Mooncake (1045 BC)</a>
+                              <a class="dropdown-item" href="https://moyamatcha.com/en/moya-matcha/history-of-matcha/#:~:text=The%20history%20of%20green%20tea,Eisai%2C%20and%20brought%20to%20Japan." target="_blank" onclick="$('#collapseOne').collapse('show');" onclick="$('#collapseTwo').collapse('show');">Matcha (1100 AD)</a>
+                              <a class="dropdown-item" href="https://www.foodandwine.com/tea/bubble-tea-taiwanese-street-drink-turned-american-addiction#:~:text=The%20History%20of%20Boba%20Tea,tapioca%20balls%20were%20common%20desserts." target="_blank" onclick="$('#collapseOne').collapse('show');" onclick="$('#collapseThree').collapse('show');">Bubble Tea (1980s)</a>
+                            </div>
+                        </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="./contacts.html">Contacts</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./references.html">References</a>
+                    </li>
+                </ul>
+          </div>
+        </nav>
+    </div>
+    <div class="spacer"></div>
+    <div class="wrapper">
+        <h1>Contact Us</h1>
+        <p>Feel free to contact us through this form. We value your thoughts, and we are available to answer any of your questions!</p>
+        <a href="mailto:noemail@email.com" target="_blank">Email us here.</a><br>
+        <div class="spacer"></div>
+        <div class="form">
+            <form>
+                <input type="text" id="namebox" name="namebox" onblur="checkName();"/>
+                <p>Name</p>
+                <input type="text" id="emailbox" name="emailbox" onblur="checkEmail();"/>
+                <p>Email Address</p>
+                <select id="reasonForMsg" class="dopt" onChange="showInput();">
+                    <option>Please Choose an Option</option>
+                    <option>General Inquiry</option>
+                    <option>Pricing and Bulk Rating</option>
+                    <option>Product Info</option>
+                    <option>Shipping</option>
+                    <option>Other</option>
+                </select>
+                <p>Reason for Message</p>
+                <input type="text" id="pID" name="pID" class="hidden" onblur="checkPID();"/>
+                <p id="pLabel" class="hidden">Product ID</p>
+                <input type="text" id="messagebox" name="messagebox" class="msgarea" onblur="checkMsg();"/>
+                <p>Message</p>
+                <input type="button" class="btn btn-dark" name="submit" value="Send"/>
+            </form>
+        </div>
+    </div>
+        
+    <script src="./js/script-form.js"></script>
+    
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    </body>
+</html>

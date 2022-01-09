@@ -1,0 +1,318 @@
+<!doctype html>
+<html>
+    <head>
+    <title>Emily's Bakery|Products</title>
+    <link rel="stylesheet" type="text/css" href="./css/style-main.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"/>
+    <link rel="icon" href="./images/favicon.ico"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
+    </head>
+    <body onscroll="scroll();">
+        <a name="top"></a>
+        <div name="top">
+            <!--
+
+            NAVBAR
+
+            -->
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+                <a class="navbar-brand" href="./index.html">Emily's Bakery</a>
+                  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item active">
+                            <!--<a class="nav-link" href="#specials">Home <span class="sr-only">(current)</span></a>-->
+                            <a class="nav-link" href="./products.html">Products</a>
+                        </li>
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">History</a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                              <a class="dropdown-item" href="https://www.chinahighlights.com/festivals/mid-autumn-festival-history-origin.htm#:~:text=The%20early%20form%20of%20the,and%20more%20popular%20over%20time." target="_blank" onclick="$('#collapseOne').collapse('show');">Mooncake (1045 BC)</a>
+                              <a class="dropdown-item" href="https://moyamatcha.com/en/moya-matcha/history-of-matcha/#:~:text=The%20history%20of%20green%20tea,Eisai%2C%20and%20brought%20to%20Japan." target="_blank" onclick="$('#collapseOne').collapse('show');" onclick="$('#collapseTwo').collapse('show');">Matcha (1100 AD)</a>
+                              <a class="dropdown-item" href="https://www.foodandwine.com/tea/bubble-tea-taiwanese-street-drink-turned-american-addiction#:~:text=The%20History%20of%20Boba%20Tea,tapioca%20balls%20were%20common%20desserts." target="_blank" onclick="$('#collapseOne').collapse('show');" onclick="$('#collapseThree').collapse('show');">Bubble Tea (1980s)</a>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./contacts.html">Contacts</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./references.html">References</a>
+                        </li>
+                    </ul>
+              </div>
+            </nav>
+        </div>
+        <div class="spacer"></div>
+        <div class="wrapper">
+            <h1>Products</h1>
+            <!--
+
+            GRID
+
+            -->
+            <div class="container">
+              <div class="row">
+                <div class="col">
+                    <img class="square" src="./images/matchabrownie2.jpg">
+                    <h4>Matcha Brownies</h4>
+                    <p>Item code: m1e1s01</p>
+                    <p>Matcha has risen in popularity in the past few years, for good reason - it's uniquely earthy taste brings heartwarming memories back to many. Why not add some spice (or Matcha) to your favourite brownies? Comes with ingredients and recipe.</p>
+
+                    <!-- 
+
+                    BUTTON
+
+                    -->
+                    <div class="button">
+                        <button type="button" class="btn btn-dark" data-toggle="modal" data-target="#exampleModal">
+                          Add to Cart
+                        </button>
+                    </div>
+
+                    <!-- 
+
+                    MODAL 
+
+                    -->
+                        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                          <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                              <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel">Add to Cart</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                  <span aria-hidden="true">&times;</span>
+                                </button>
+                              </div>
+                              <div class="modal-body">
+                                This item has been added to cart.
+                              </div>
+                              <div class="modal-footer">
+                                <button type="button" class="btn btn-info" data-dismiss="modal">Ok</button>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+
+                </div>
+                <div class="col">
+                    <img class="square" src="./images/tangyuan.jpg">
+                    <h4>Tang Yuan</h4>
+                    <p>Item code: t1e1s02</p>
+                    <p>Tang Yuan sparks memories of Lunar New Year celebrations, with red pocket money and tasty feasts. This warm treat is filled with an assortment of tasty peanut butter and black sesame paste. Comes with ingredients and recipe.</p>
+                    <!-- 
+
+                    BUTTON
+
+                    -->
+                    <div class="button">
+                        <button type="button" class="btn btn-dark" data-toggle="modal" data-target="#exampleModal">
+                          Add to Cart
+                        </button>
+                    </div>
+
+                    <!-- 
+
+                    MODAL 
+
+                    -->
+                        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                          <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                              <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel">Add to Cart</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                  <span aria-hidden="true">&times;</span>
+                                </button>
+                              </div>
+                              <div class="modal-body">
+                                This item has been added to cart.
+                              </div>
+                              <div class="modal-footer">
+                                <button type="button" class="btn btn-info" data-dismiss="modal">Ok</button>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                </div>
+                <div class="w-100"></div>
+                <div class="col">
+                    <img class="square" src="./images/mooncakes.jpg">
+                    <h4>Moon Cakes</h4>
+                    <p>Item code: m2e1s03</p>
+                    <p>The Mid-Autumn Festival, packed to the brim with legends and lore, is the time to eat this delicious treat! Cut open this cake and find a whole egg inside, representing the moon. Comes with ingredients and recipe.</p>
+                    <!-- 
+
+                    BUTTON
+
+                    -->
+                    <div class="button">
+                        <button type="button" class="btn btn-dark" data-toggle="modal" data-target="#exampleModal">
+                          Add to Cart
+                        </button>
+                    </div>
+
+                    <!-- 
+
+                    MODAL 
+
+                    -->
+                        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                          <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                              <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel">Add to Cart</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                  <span aria-hidden="true">&times;</span>
+                                </button>
+                              </div>
+                              <div class="modal-body">
+                                This item has been added to cart.
+                              </div>
+                              <div class="modal-footer">
+                                <button type="button" class="btn btn-info" data-dismiss="modal">Ok</button>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                </div>
+                <div class="col">
+                    <img class="square" src="./images/mangostickyrice.jpg">
+                    <h4>Mango Sticky Rice</h4>
+                    <p>Item code: m3e1s04</p>
+                    <p>A street vendor classic, mango sticky rice is the perfect accompaniment to a hot day. Comes with ingredients and recipe.</p>
+                    <!-- 
+
+                    BUTTON
+
+                    -->
+                    <div class="button">
+                        <button type="button" class="btn btn-dark" data-toggle="modal" data-target="#exampleModal">
+                          Add to Cart
+                        </button>
+                    </div>
+
+                    <!-- 
+
+                    MODAL 
+
+                    -->
+                        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                          <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                              <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel">Add to Cart</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                  <span aria-hidden="true">&times;</span>
+                                </button>
+                              </div>
+                              <div class="modal-body">
+                                This item has been added to cart.
+                              </div>
+                              <div class="modal-footer">
+                                <button type="button" class="btn btn-info" data-dismiss="modal">Ok</button>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                </div>
+                <div class="w-100"></div>
+                <div class="col">
+                    <img class="square" src="./images/bubbletea.jpg">
+                    <h4>Bubble Milk Tea</h4>
+                    <p>Item code: b1e1s05</p>
+                    <p>Bubble tea, commonly referred to as boba, is a staple that everyone needs to try! Drinking our signature Hong Kong style milk tea with quality tapico is an experience you need. Comes with ingredients and recipe.</p>
+                    <!-- 
+
+                    BUTTON
+
+                    -->
+                    <div class="button">
+                        <button type="button" class="btn btn-dark" data-toggle="modal" data-target="#exampleModal">
+                          Add to Cart
+                        </button>
+                    </div>
+
+                    <!-- 
+
+                    MODAL 
+
+                    -->
+                        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                          <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                              <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel">Add to Cart</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                  <span aria-hidden="true">&times;</span>
+                                </button>
+                              </div>
+                              <div class="modal-body">
+                                This item has been added to cart.
+                              </div>
+                              <div class="modal-footer">
+                                <button type="button" class="btn btn-info" data-dismiss="modal">Ok</button>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                </div>
+                <div class="col">
+                    <img class="square" src="./images/sesameballs.jpg" id="tester">
+                    <h4>Red Bean Sesame Balls</h4>
+                    <p>Item code: r1e1s06</p>
+                    <p>This treat will make you want to run to the nearest dim sum restaurant! A mix of sweet and salty, sesame balls filled with red bean paste are delightful. Comes with ingredients and recipe.</p>
+                    <!-- 
+
+                    BUTTON
+
+                    -->
+                    <div class="button">
+                        <button type="button" class="btn btn-dark" data-toggle="modal" data-target="#exampleModal">
+                          Add to Cart
+                        </button>
+                    </div>
+
+                    <!-- 
+
+                    MODAL 
+
+                    -->
+                        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                          <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                              <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel">Add to Cart</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                  <span aria-hidden="true">&times;</span>
+                                </button>
+                              </div>
+                              <div class="modal-body">
+                                This item has been added to cart.
+                              </div>
+                              <div class="modal-footer">
+                                <button type="button" class="btn btn-info" data-dismiss="modal">Ok</button>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                </div>
+              </div>
+            </div>
+        </div>
+        <div class="emptyspace"></div>
+                <div  class="scrollfire">
+                    <img src="./images/fortunecookie2.jpeg" id="cookie"/>
+                </div>
+        <div class="emptyspace"></div>
+
+        <script src="js/script-scrollfire.js"></script>
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    </body>
+</html>
