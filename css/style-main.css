@@ -1,0 +1,117 @@
+html, body {
+    /*background-color:black;*/
+    margin:0;
+    padding:0;
+    font-family:helvetica;
+    scroll-behavior: smooth;
+}
+
+h1 {
+    font-family: 'Roboto', sans-serif;
+}
+
+img {
+    width:100%;
+    object-fit:fill;
+}
+
+.banner {
+    padding:0px;
+    max-width:100%;
+}
+
+.wrapper {
+    padding: 4rem 16rem 4rem 16rem;
+    /*margin-top:40px;*/
+    font-weight:200;
+}
+
+.carousel {
+    padding: 0% 15% 0% 15%;
+}
+
+.ourteam {
+    max-height: 33%;
+    max-width: 33;
+    object-fit: cover;
+    padding-bottom: 3%;
+}
+
+.square {
+    max-height:20rem;
+    max-width:100%;
+    object-fit: cover;
+}
+
+.button {
+    padding-bottom: 5%;
+}
+
+.hidden {
+    display: none;
+}
+.visible {
+    display:block;
+}
+
+.dopt {
+    font-family:helvetica;
+    font-weight:200;
+    padding: 0.5rem;
+}
+
+.form {
+    padding: 30px 30px 30px 30px;
+    font-weight:200;
+}
+
+.parallax-img1 {
+    width:100%;
+    height:500px;
+    margin-bottom:30px;
+    background-image: url("../images/eb-banner.png");
+    background-size:cover;
+    background-attachment:fixed;
+}
+
+.parallax-img2 {
+    width:100%;
+    height:500px;
+    margin-bottom:30px;
+    background-image: url("../images/bakery2.jpg");
+    background-size:cover;
+    background-attachment:fixed;
+}
+
+.parallax-img3 {
+    width:100%;
+    height:500px;
+    margin-bottom:30px;
+    background-image: url("../images/bakery3.jpg");
+    background-size:cover;
+    background-attachment:fixed;
+}
+
+#cookie {
+    width:300px;
+    margin:auto;
+    display:block;
+    object-position: center;
+    transition: all .4s;
+}
+
+.scrollfire {
+    background-color: #8bcee9;
+    height:300px;
+}
+.emptyspace {
+    height:100px;
+    background-color: #8bcee9;
+}
+.msgarea {
+    height:100px;
+    width:700px;
+}
+.spacer {
+    height: 20px;
+}
